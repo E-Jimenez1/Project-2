@@ -1,0 +1,227 @@
+
+/* Elements */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    width: 95%;
+    margin: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.2em;
+    color: slategray;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    margin-top: 15px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Id's */
+
+#contact,
+#portfolio {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 25px;
+}
+
+/* Classes */
+
+.my-name {
+    font-size: 2em;
+    margin: 0;
+    color: black;
+    text-align: center;
+    font-family: 'Muli', sans-serif;
+}
+
+.profile-img {
+    padding: 30px 0;
+}
+
+.profile-container {
+    text-align: center;
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+
+.my-name,
+.profile-container {
+    background-color: aliceblue;
+}
+
+.name-footer {
+    float: left;
+}
+
+.home-footer {
+    float: right;
+}
+
+.contact {
+    background-color: aliceblue;
+    margin-top: 20px;
+    padding-bottom: 15px;
+}
+
+.main-content {
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+
+/* Navigation */
+
+.my-name a,
+.nav-bar a,
+.nav-bottom a {
+	text-align: center;
+	display: block;
+    padding: 10px 15px;
+}
+
+.name-footer,
+.home-footer a,
+.nav-bar a,
+.nav-bottom a {
+	font-size: 1em;
+    text-transform: uppercase;
+    color: slategray;
+}
+
+.nav-bar {
+    padding-top: 15px;
+}
+
+.nav-bar li {
+    margin: 5px;
+    background-color: aliceblue;
+}
+
+.nav-bar,
+.nav-bottom a:hover {
+	color: darkgray;
+}
+
+.nav-bottom {
+    display: none;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    .profile-img {
+        float: right;
+        max-width: 40%;
+        padding: 0 10px;
+    }
+
+    .my-name {
+        margin-top: 15px;
+        padding: 15px 0;
+    }
+
+
+    .nav-bar {
+        max-width: 100%;
+        text-align: center;
+        display: block;
+    
+    }
+
+    .nav-bar li {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .about {
+        float: left;
+        max-width: 60%;
+        padding: 0 10px;
+        margin: 30px 0;
+    }
+
+    .marketing,
+    .travel,
+    .gallery {
+        float: left;
+        max-width: 50%;
+        padding: 0 10px;
+    }
+
+    .search,
+    .map,
+    .calculator {
+        float: right;
+        max-width: 50%;
+        padding: 0 10px;
+    }
+    
+    .home-footer {
+        display: none;
+    }
+
+    .nav-bottom {
+        float: right;
+        display: block;
+    }
+
+    .nav-bottom li {
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .my-name {
+        float: left;
+    }
+
+    .nav-bar {
+        float: right;
+    }
+
+    .about {
+        margin: 50px 0;
+    }
+
+    .search,
+    .travel,
+    .gallery,
+    .calculator,
+    .marketing,
+    .map {
+        float: left;
+        max-width: 33%;
+    }
+}
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}

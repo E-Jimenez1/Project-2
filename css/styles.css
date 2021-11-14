@@ -1,0 +1,190 @@
+
+
+* {
+  box-sizing: border-box;
+  border: 1px red dashed;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+  margin: 1em;
+}
+
+li {
+  list-style: none;
+  text-transform: uppercase;
+  margin: .5em 2.5em;
+  padding: .70em;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+p {
+  padding: 20px;
+  font-size: 1.15em;
+  line-height: 1.5;
+  margin-top: 0;
+}
+
+img {
+  max-width: 95%;
+  margin: 1em auto;
+}
+
+h2 {
+  margin: .5em auto;
+}
+
+li {
+  
+  font-weight: bold;
+}
+
+li, 
+.content {
+  background-color: #cceddb;
+}
+
+.profile,
+aside {
+  padding: 10px;
+  background-color: #83BAA8;
+}
+
+.skill {
+  background-color: #BFD8D5;
+}
+
+a:visited {
+  color: #B8B8B8;
+}
+
+h1,
+h3 {
+  text-transform: uppercase;
+  color:#218F69;
+}
+
+.hide-mobile {
+  display: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 1em;
+}
+
+
+
+/*==============================
+// Media Queries
+===============================*/
+
+@media screen and (min-width: 768px) {
+
+  li {
+    margin: 1em auto;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: auto 0;
+  }
+
+  .profile p,
+  img {
+    margin: 0;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    padding: 1em;
+  }
+  .project img,
+  p {
+    margin: 0 auto;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .hide-tablet {
+    display: none;
+  }
+
+  .hide-mobile {
+    display: contents;
+  }
+
+  .hide-mobile ul {
+    margin: 0;
+  }
+
+  .hide-mobile li {
+    display: inline-block;
+    margin: .25em;
+  }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1em;
+  }
+
+  .buttons ul {
+    margin: 0;
+  }
+
+  .buttons li {
+    margin: .25em;
+  }
+
+  .profile {
+    padding: 2em;
+  }
+
+  .profile p,
+  img {
+    margin: 1em;
+  }
+
+  .project {
+    max-width: 30%;
+    margin: 0 auto;
+  }
+
+  .project img,
+  p {
+    margin: 0 1em;
+  }
+
+}
